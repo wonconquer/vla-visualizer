@@ -100,10 +100,10 @@ def main() -> None:
         st.caption(
             "Device and seed selections apply on Load model. CPU uses float32 and eight threads."
         )
-        if st.button("Load saved Phase 3 capture", key="load_saved_capture"):
+        if st.button("Load saved capture", key="load_saved_capture"):
             try:
                 root = Path(__file__).resolve().parent
-                payload = json.loads((root / "docs/phase3_integration_validation.json").read_text())
+                payload = json.loads((root / "assets/education/reference_capture.json").read_text())
                 sample_path = root / "assets/sample_inputs/so100_observation.json"
                 sample_manifest = json.loads(sample_path.read_text())
                 hashes = payload["metadata"]["observation_provenance"]["image_sha256_by_camera"]
@@ -119,7 +119,7 @@ def main() -> None:
                     payload,
                     backend.get_inspection_spec(selected.model_id),
                     read_observation(sample_path),
-                    origin="saved Phase 3 evidence; no model execution",
+                    origin="saved reference capture; no model execution",
                 )
                 st.session_state["replay_run"] = completed
             except Exception as exc:

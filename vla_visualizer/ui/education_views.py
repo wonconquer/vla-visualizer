@@ -1,6 +1,6 @@
 """Render captured summaries without running the model or reconstructing tensors."""
 
-from vla_visualizer.ui.presentation import present
+from copy import deepcopy
 
 import base64
 from html import escape
@@ -96,7 +96,7 @@ def pipeline_visuals(data, instruction, flow_step=0):
         result[key] = {"shape": shape(value), "norms": value.get("token_norms", [])}
     from vla_visualizer.ui.pipeline_evidence import enrich
 
-    return present(enrich(data, result, flow_step))
+    return deepcopy(enrich(data, result, flow_step))
 
 
 def norm_grid_html(summary, layout, connector=False):
@@ -401,7 +401,7 @@ def render_stage(data, stage, flow_step=0, action_index=0):
         )
         records = select_records(capture, ["normalized_action_chunk", "action_postprocessing"])
     with st.expander("Developer details · record / module / tensor statistics"):
-        st.json(present(records), expanded=False)
+        st.json(deepcopy(records), expanded=False)
 
 
 def component_preview_html(args):

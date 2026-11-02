@@ -1,4 +1,4 @@
-"""Phase 5 boundaries. Unit fixtures do not stand in for simulator acceptance."""
+"""Job execution boundaries. Unit fixtures do not stand in for simulator acceptance."""
 
 import subprocess
 import sys

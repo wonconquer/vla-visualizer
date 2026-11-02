@@ -14,7 +14,7 @@ from vla_visualizer.adapters.smolvla_inspection import POINTS
 
 @pytest.mark.integration
 @pytest.mark.skipif(os.environ.get("ECE525_REAL_SMOKE") != "1", reason="Needs cached checkpoint; opt in")
-def test_real_inspection_preserves_phase2_and_captures_executed_stages() -> None:
+def test_real_inspection_preserves_actions_and_captures_executed_stages() -> None:
     report = inspect_real_sample(LoadOptions(), repeats=3)
     intermediate = report["intermediates"]
     stages = intermediate["stages"]
@@ -79,11 +79,11 @@ def test_real_inspection_preserves_phase2_and_captures_executed_stages() -> None
     assert report["metadata"]["action_postprocessing_verified"]
     json.dumps(report, allow_nan=False)
     root = Path(__file__).resolve().parents[1]
-    phase2 = json.loads((root / "docs/smolvla_matched_cpu_result.json").read_text())
-    torch.testing.assert_close(torch.tensor(report["actions"]), torch.tensor(phase2["actions"]),
+    reference = json.loads((root / "tests/fixtures/reference_actions.json").read_text())
+    torch.testing.assert_close(torch.tensor(report["actions"]), torch.tensor(reference["actions"]),
                                rtol=0, atol=1e-6)
     validation_dir = root / os.environ.get("ECE525_VALIDATION_DIR", "outputs")
     validation_dir.mkdir(parents=True, exist_ok=True)
-    (validation_dir / "phase3_integration_validation.json").write_text(
+    (validation_dir / "inspection_validation.json").write_text(
         json.dumps(report, indent=2, allow_nan=False) + "\n"
     )

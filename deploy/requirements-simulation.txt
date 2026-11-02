@@ -1,5 +1,5 @@
 # Candidate isolated simulation environment; full installation is not verified.
-# Use a separate environment; see docs/VALIDATION.md for current limitations.
+# Use a separate environment; see README.md for current limitations.
 lerobot[smolvla,libero]==0.6.1
 hf-libero==0.1.4
 robosuite==1.4.0

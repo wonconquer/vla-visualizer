@@ -18,7 +18,7 @@ def test_actual_ui_selection_and_replay(monkeypatch):
     from vla_visualizer.ui.workflow import manager
     from vla_visualizer.inference.replay import select_records
 
-    destination = ROOT / "outputs/phase5_integrated/ui_jobs"
+    destination = ROOT / "outputs/integration/ui_jobs"
     monkeypatch.setenv("VLA_ARTIFACT_DIR", str(destination))
     manager.clear()
     app = AppTest.from_file(ROOT / "app.py", default_timeout=45).run()
@@ -80,7 +80,7 @@ def test_actual_ui_selection_and_replay(monkeypatch):
         assert not app.exception
     assert app.session_state["education_training"]["result"]["frozen_parameters_preserved"]
     atomic_json(
-        ROOT / "outputs/phase5_integrated/actual_ui_validation.json",
+        ROOT / "outputs/integration/actual_ui_validation.json",
         {
             "status": "PASS_REAL_WORKER_AND_APPTEST_ONLY",
             "job_run_id": job,

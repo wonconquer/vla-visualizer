@@ -141,7 +141,7 @@ def test_completed_checkpoint_view_does_not_require_a_baseline_run(tmp_path, mon
     owner = "fixture-session"
     parent = "1" * 32
     child = "2" * 32
-    training = json.loads((ROOT / "assets/education/training_integrated_evidence.json").read_text())
+    training = json.loads((ROOT / "assets/education/training_capture.json").read_text())
     training["result"]["run_id"] = parent
     directory = manager.directory(parent)
     directory.mkdir()

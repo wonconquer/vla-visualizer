@@ -1,6 +1,6 @@
 """Explore SmolVLA information flow; model execution uses explicit jobs."""
 
-from vla_visualizer.ui.presentation import present
+from copy import deepcopy
 
 from hashlib import sha256
 from io import BytesIO
@@ -49,7 +49,7 @@ def local_file(directory, name):
 def saved_capture():
     from vla_visualizer.adapters.smolvla import SmolVLAAdapter
 
-    capture = read_json(ROOT / "docs/phase3_integration_validation.json")
+    capture = read_json(ROOT / "assets/education/reference_capture.json")
     manifest = read_json(sample_path())
     for camera, filename in manifest["images"].items():
         expected = capture["metadata"]["observation_provenance"]["image_sha256_by_camera"][camera]
@@ -59,7 +59,7 @@ def saved_capture():
         capture,
         SmolVLAAdapter().get_inspection_spec(),
         read_observation(sample_path()),
-        origin="verified Phase 3 capture; no new inference",
+        origin="recorded reference capture; no new inference",
     )
 
 
@@ -483,7 +483,7 @@ def job_feedback(job, owner):
     }
     directory = manager().directory(job)
     st.caption(
-        f"{names[status['kind']]} · {status['state']} · {present(status['progress'].get('phase', 'Waiting to start'))}"
+        f"{names[status['kind']]} · {status['state']} · {deepcopy(status['progress'].get('phase', 'Waiting to start'))}"
     )
     if status["state"] not in TERMINAL:
         if status["kind"] == "simulation":
@@ -505,10 +505,10 @@ def job_feedback(job, owner):
         st.warning("The job did not complete. See the diagnostic panel for the exact failure.")
     with st.expander("Developer details · run / configuration / diagnostics / downloads"):
         st.code(job, language=None)
-        st.json(present(status), expanded=False)
+        st.json(deepcopy(status), expanded=False)
         for name in ("error.json", "preflight.json", "result.json"):
             if (directory / name).exists():
-                st.json(present(read_json(directory / name)), expanded=False)
+                st.json(deepcopy(read_json(directory / name)), expanded=False)
         if status["state"] in TERMINAL:
             try:
                 archive = manager().export(job, owner)
@@ -678,10 +678,7 @@ def main():
             "SO100 dataset inference. The selected sentence reaches the tokenizer and model. Task success for sentence variations is not verified."
         )
     elif kind == "training":
-        evidence = ROOT / "assets/education/training_evidence.json"
-        latest = ROOT / "assets/education/training_integrated_evidence.json"
-        if latest.exists():
-            evidence = latest
+        evidence = ROOT / "assets/education/training_capture.json"
         if execute.button(
             "Open recorded training experiment",
             key="saved_training",
@@ -827,7 +824,7 @@ def main():
             and status["kind"] == "simulation"
             and (manager().directory(status["run_id"]) / "rollout.json").exists()
         ):
-            from vla_visualizer.ui.phase5_diagnostics import render_rollout
+            from vla_visualizer.ui.rollout_viewer import render_rollout
 
             render_rollout(manager().directory(status["run_id"]))
     with st.expander("Developer settings · workers / resources / checkpoint readiness"):

@@ -87,7 +87,7 @@ def test_all_real_capture_views_and_play_without_inference(monkeypatch):
 
 
 def test_training_measured_events_and_fixed_probe():
-    record=json.loads((ROOT/'assets/education/training_evidence.json').read_text())
+    record=json.loads((ROOT/'assets/education/training_capture.json').read_text())
     assert record['visualization']['hook_count_after_step']==0
     assert 'target_velocity' in record['visualization']['objective']
     steps=record['visualization']['steps']

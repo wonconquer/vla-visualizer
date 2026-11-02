@@ -13806,17 +13806,17 @@
         ],
         "tokens": [
           "Pick",
-          "Ġup",
-          "Ġthe",
-          "Ġcube",
-          "Ġand",
-          "Ġplace",
-          "Ġit",
-          "Ġin",
-          "Ġthe",
-          "Ġbox",
+          "\u0120up",
+          "\u0120the",
+          "\u0120cube",
+          "\u0120and",
+          "\u0120place",
+          "\u0120it",
+          "\u0120in",
+          "\u0120the",
+          "\u0120box",
           ".",
-          "Ċ",
+          "\u010a",
           "<|im_end|>",
           "<|im_end|>",
           "<|im_end|>",
@@ -13890,7 +13890,6 @@
   "metadata": {
     "checkpoint": "Zekai-Chen/smolvla_so100_pickplace_ft_2cam",
     "revision": "77172eaffe82c0897945607bfe818b5b164eb57e",
-    "snapshot_path": "<original-model-cache>/hub/models--Zekai-Chen--smolvla_so100_pickplace_ft_2cam/snapshots/77172eaffe82c0897945607bfe818b5b164eb57e",
     "strict_loading": true,
     "loading_keys": {
       "tensor_count": 500,
@@ -13932,7 +13931,7 @@
       "wrist_roll",
       "gripper"
     ],
-    "coordinate_convention": "Legacy pre-PR-777 SO100: first five joints in calibrated degrees, gripper in calibrated percent (nominal 0–100). State is measured follower position; actions are absolute target positions.",
+    "coordinate_convention": "Legacy pre-PR-777 SO100: first five joints in calibrated degrees, gripper in calibrated percent (nominal 0\u2013100). State is measured follower position; actions are absolute target positions.",
     "observation_provenance": {
       "dataset": "lerobot/svla_so100_pickplace",
       "revision": "87169e502b742f989b96c952bff7af55e248d467",
@@ -15457,9 +15456,9 @@
           "wrist_roll",
           "gripper"
         ],
-        "coordinate_convention": "Legacy pre-PR-777 SO100: first five joints in calibrated degrees, gripper in calibrated percent (nominal 0–100). State is measured follower position; actions are absolute target positions.",
+        "coordinate_convention": "Legacy pre-PR-777 SO100: first five joints in calibrated degrees, gripper in calibrated percent (nominal 0\u2013100). State is measured follower position; actions are absolute target positions.",
         "statistics_source": "native checkpoint processor files; no override",
-        "pairing_evidence": "docs/SMOLVLA_PAIRING.md and docs/smolvla_pairing.json"
+        "pairing_evidence": "docs/DATA.md and assets/sample_inputs/dataset_metadata.json"
       }
     },
     "denoising_steps": 10,
@@ -15509,103 +15508,5 @@
       "graphviz": "0.21"
     },
     "pipeline_seconds": 1.6470587519870605
-  },
-  "validation": {
-    "checks": [
-      {
-        "repeat": 0,
-        "max_action_absolute_difference": 0.0,
-        "hook_count_before": 0,
-        "hook_count_after": 0,
-        "record_count": 23
-      },
-      {
-        "repeat": 1,
-        "max_action_absolute_difference": 0.0,
-        "hook_count_before": 0,
-        "hook_count_after": 0,
-        "record_count": 23
-      },
-      {
-        "repeat": 2,
-        "max_action_absolute_difference": 0.0,
-        "hook_count_before": 0,
-        "hook_count_after": 0,
-        "record_count": 23
-      }
-    ],
-    "timings": [
-      {
-        "baseline_seconds": 1.6583462020062143,
-        "inspection_seconds": 1.7662345499993535
-      },
-      {
-        "baseline_seconds": 1.7041238050005632,
-        "inspection_seconds": 1.7238365820085164
-      },
-      {
-        "baseline_seconds": 1.5852423109899973,
-        "inspection_seconds": 1.629163213990978
-      }
-    ],
-    "baseline_median_seconds": 1.6583462020062143,
-    "inspection_median_seconds": 1.7238365820085164,
-    "observed_overhead_seconds": 0.06549038000230212,
-    "observed_overhead_percent": 3.9491379980292285,
-    "capture_json_bytes": 171094,
-    "rss_samples": [
-      {
-        "repeat": 0,
-        "capture": false,
-        "before_bytes": 3171545088,
-        "after_bytes": 3171684352
-      },
-      {
-        "repeat": 0,
-        "capture": true,
-        "before_bytes": 3171684352,
-        "after_bytes": 3172073472
-      },
-      {
-        "repeat": 1,
-        "capture": false,
-        "before_bytes": 3172081664,
-        "after_bytes": 3172323328
-      },
-      {
-        "repeat": 1,
-        "capture": true,
-        "before_bytes": 3172323328,
-        "after_bytes": 3172323328
-      },
-      {
-        "repeat": 2,
-        "capture": false,
-        "before_bytes": 3172323328,
-        "after_bytes": 3172323328
-      },
-      {
-        "repeat": 2,
-        "capture": true,
-        "before_bytes": 3172323328,
-        "after_bytes": 3172323328
-      }
-    ],
-    "process_high_water_samples_bytes": [
-      3242745856,
-      3242745856,
-      3242745856,
-      3242745856,
-      3242745856,
-      3242745856
-    ],
-    "memory_limit": "VmRSS is process resident memory; high water is cumulative and includes loading; neither isolates temporary capture allocations",
-    "retained_tensors": false,
-    "python": "3.12.14",
-    "processor": "x86_64",
-    "torch_build": "2.10.0+cu126",
-    "cuda_available": false,
-    "process_peak_rss_bytes": 3242745856,
-    "observation_sha256": "aa9321848dbb26aa384f30cb8c32825e55d3128b24c9cd8c9919d4bef1866f2c"
   }
 }

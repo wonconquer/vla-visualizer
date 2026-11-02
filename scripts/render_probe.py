@@ -24,7 +24,7 @@ print(json.dumps({'rendered':True,'shape':list(frame.shape),'mujoco':mujoco.__ve
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--output", type=Path, default=Path("outputs/phase5/render_probe.json"))
+    parser.add_argument("--output", type=Path, default=Path("outputs/jobs_validation/render_probe.json"))
     args = parser.parse_args()
     records = []
     for backend in ("egl", "osmesa"):

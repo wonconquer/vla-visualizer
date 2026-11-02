@@ -1,0 +1,178 @@
+{
+  "repo": "lerobot/svla_so100_pickplace",
+  "revision": "87169e502b742f989b96c952bff7af55e248d467",
+  "info": {
+    "codebase_version": "v2.1",
+    "robot_type": "so100",
+    "total_episodes": 50,
+    "total_frames": 19631,
+    "total_tasks": 1,
+    "total_videos": 100,
+    "total_chunks": 1,
+    "chunks_size": 1000,
+    "fps": 30,
+    "splits": {
+      "train": "0:50"
+    },
+    "data_path": "data/chunk-{episode_chunk:03d}/episode_{episode_index:06d}.parquet",
+    "video_path": "videos/chunk-{episode_chunk:03d}/{video_key}/episode_{episode_index:06d}.mp4",
+    "features": {
+      "action": {
+        "dtype": "float32",
+        "shape": [
+          6
+        ],
+        "names": [
+          "main_shoulder_pan",
+          "main_shoulder_lift",
+          "main_elbow_flex",
+          "main_wrist_flex",
+          "main_wrist_roll",
+          "main_gripper"
+        ]
+      },
+      "observation.state": {
+        "dtype": "float32",
+        "shape": [
+          6
+        ],
+        "names": [
+          "main_shoulder_pan",
+          "main_shoulder_lift",
+          "main_elbow_flex",
+          "main_wrist_flex",
+          "main_wrist_roll",
+          "main_gripper"
+        ]
+      },
+      "observation.images.top": {
+        "dtype": "video",
+        "shape": [
+          480,
+          640,
+          3
+        ],
+        "names": [
+          "height",
+          "width",
+          "channels"
+        ],
+        "info": {
+          "video.fps": 30.0,
+          "video.height": 480,
+          "video.width": 640,
+          "video.channels": 3,
+          "video.codec": "av1",
+          "video.pix_fmt": "yuv420p",
+          "video.is_depth_map": false,
+          "has_audio": false
+        }
+      },
+      "observation.images.wrist": {
+        "dtype": "video",
+        "shape": [
+          480,
+          640,
+          3
+        ],
+        "names": [
+          "height",
+          "width",
+          "channels"
+        ],
+        "info": {
+          "video.fps": 30.0,
+          "video.height": 480,
+          "video.width": 640,
+          "video.channels": 3,
+          "video.codec": "av1",
+          "video.pix_fmt": "yuv420p",
+          "video.is_depth_map": false,
+          "has_audio": false
+        }
+      },
+      "timestamp": {
+        "dtype": "float32",
+        "shape": [
+          1
+        ],
+        "names": null
+      },
+      "frame_index": {
+        "dtype": "int64",
+        "shape": [
+          1
+        ],
+        "names": null
+      },
+      "episode_index": {
+        "dtype": "int64",
+        "shape": [
+          1
+        ],
+        "names": null
+      },
+      "index": {
+        "dtype": "int64",
+        "shape": [
+          1
+        ],
+        "names": null
+      },
+      "task_index": {
+        "dtype": "int64",
+        "shape": [
+          1
+        ],
+        "names": null
+      }
+    }
+  },
+  "source_files": [
+    {
+      "rfilename": "data/chunk-000/episode_000000.parquet",
+      "blobId": "d616195aff3992b628e2823706725189027b753f",
+      "size": 24457,
+      "lfs": {
+        "sha256": "35d98dcc0bf846749cf1b674011c0fcd4215510a197f7f9f3b3d1a08fec788e9",
+        "size": 24457,
+        "pointerSize": 130
+      }
+    },
+    {
+      "rfilename": "meta/episodes_stats.jsonl",
+      "blobId": "5ea6ad1cef0780933abd0587816379366803ec2f",
+      "size": 104610
+    },
+    {
+      "rfilename": "meta/info.json",
+      "blobId": "f114be70a3a89417cb15c318c1723869b0734e6f",
+      "size": 3230
+    },
+    {
+      "rfilename": "meta/tasks.jsonl",
+      "blobId": "208710f6434db2a758972a1cb6e53a29d1b59c56",
+      "size": 71
+    },
+    {
+      "rfilename": "videos/chunk-000/observation.images.top/episode_000000.mp4",
+      "blobId": "9f660cfcad4ea636bbca1e6df362ad6619557e5a",
+      "size": 7428771,
+      "lfs": {
+        "sha256": "0a2468d734b926fbd1ff39aa02eb9ffea263187b6c904c94284b70e6d485c321",
+        "size": 7428771,
+        "pointerSize": 132
+      }
+    },
+    {
+      "rfilename": "videos/chunk-000/observation.images.wrist/episode_000000.mp4",
+      "blobId": "1430a241c2e1482982f2f329389d0499296c03a5",
+      "size": 4007198,
+      "lfs": {
+        "sha256": "f0d96c607243383274d1871c043fd429343481e7c477b19169964fbad3b579ac",
+        "size": 4007198,
+        "pointerSize": 132
+      }
+    }
+  ]
+}

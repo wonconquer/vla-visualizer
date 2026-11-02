@@ -17,7 +17,7 @@ from vla_visualizer.execution.jobs import atomic_json
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
-        "--output", type=Path, default=ROOT / "outputs/phase5_integrated/simulation"
+        "--output", type=Path, default=ROOT / "outputs/integration/simulation"
     )
     parser.add_argument("--quick", action="store_true")
     args = parser.parse_args()
@@ -64,7 +64,7 @@ def main():
     from vla_visualizer.simulation.compatibility import preflight, assets_dir, REVISION
 
     report = preflight()
-    manifest = assets_dir() / "phase5_asset_manifest.json"
+    manifest = assets_dir() / "task_assets.json"
     assets_verified = False
     asset_error = None
     if manifest.is_file():

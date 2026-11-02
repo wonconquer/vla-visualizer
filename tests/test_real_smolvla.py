@@ -134,7 +134,7 @@ def test_real_inference_from_streamlit(monkeypatch: pytest.MonkeyPatch) -> None:
         }
         validation_dir = root / os.environ.get("ECE525_VALIDATION_DIR", "outputs")
         validation_dir.mkdir(parents=True, exist_ok=True)
-        (validation_dir / "phase2_integration_validation.json").write_text(
+        (validation_dir / "inference_validation.json").write_text(
             json.dumps(report, indent=2, allow_nan=False) + "\n"
         )
         # Editing inputs clears previous actions; nothing is shown as a fresh prediction.

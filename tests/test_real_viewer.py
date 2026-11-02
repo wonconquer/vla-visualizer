@@ -24,13 +24,13 @@ ROOT = Path(__file__).resolve().parents[1]
     os.environ.get("ECE525_REAL_SMOKE") != "1", reason="Opt-in cached real model test"
 )
 def test_real_streamlit_capture_and_isolated_replay(monkeypatch):
-    historical = {
+    reference_files = {
         str(path): sha256(path.read_bytes()).hexdigest()
         for path in [
-            ROOT / "docs/PHASE2.md",
-            ROOT / "docs/PHASE3.md",
-            ROOT / "docs/phase2_integration_validation.json",
-            ROOT / "docs/phase3_integration_validation.json",
+            ROOT / "docs/ARCHITECTURE.md",
+            ROOT / "docs/DATA.md",
+            ROOT / "tests/fixtures/reference_actions.json",
+            ROOT / "assets/education/reference_capture.json",
         ]
     }
     adapters, invocations, registrations = [], [], []
@@ -72,13 +72,13 @@ def test_real_streamlit_capture_and_isolated_replay(monkeypatch):
         assert not app.exception and len(invocations) == 1
         baseline = invocations[-1]
         app.checkbox(key="capture_enabled").check().run()
-        app.button[2].click().run()  # Actual Phase 3 captured pipeline.
+        app.button[2].click().run()  # Actual captured inference pipeline.
         assert not app.exception and not app.error and len(invocations) == 2
         captured = invocations[-1]
         torch.testing.assert_close(
             torch.tensor(captured.actions), torch.tensor(baseline.actions), rtol=0, atol=1e-6
         )
-        old_baseline = json.loads((ROOT / "docs/smolvla_matched_cpu_result.json").read_text())
+        old_baseline = json.loads((ROOT / "tests/fixtures/reference_actions.json").read_text())
         torch.testing.assert_close(
             torch.tensor(captured.actions), torch.tensor(old_baseline["actions"]), rtol=0, atol=1e-6
         )
@@ -167,11 +167,11 @@ def test_real_streamlit_capture_and_isolated_replay(monkeypatch):
         )
         assert sum(isinstance(v, ReplayRun) for v in app.session_state.filtered_state.values()) == 1
         assert "last_run" not in app.session_state
-        for filename, digest in historical.items():
+        for filename, digest in reference_files.items():
             assert sha256(Path(filename).read_bytes()).hexdigest() == digest
         data = completed.read()
         report = {
-            "phase": 4,
+            "check": "captured_viewer",
             "status": "PASS",
             "run_manifest": data["manifest"],
             "actual_action_shape": captured.metadata["action_chunk_shape"],
@@ -211,11 +211,11 @@ def test_real_streamlit_capture_and_isolated_replay(monkeypatch):
             "cuda_available": torch.cuda.is_available(),
             "tested_device": "cpu",
             "gpu_memory_bytes": None,
-            "historical_evidence_unchanged": historical,
+            "reference_files_evidence_unchanged": reference_files,
         }
-        destination = Path(os.environ.get("ECE525_VALIDATION_DIR", ROOT / "outputs/phase4"))
+        destination = Path(os.environ.get("ECE525_VALIDATION_DIR", ROOT / "outputs/viewer_validation"))
         destination.mkdir(parents=True, exist_ok=True)
-        (destination / "phase4_validation.json").write_text(
+        (destination / "viewer_validation.json").write_text(
             json.dumps(report, indent=2, allow_nan=False) + "\n"
         )
         (destination / "captured_replay.json").write_text(snapshot)

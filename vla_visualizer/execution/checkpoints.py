@@ -46,7 +46,7 @@ def load_trained_checkpoint(adapter, directory):
     directory = Path(directory)
     manifest_path = directory / "checkpoint_manifest.json"
     if not manifest_path.exists():
-        # Existing Phase 5 standalone checkpoint contract remains supported.
+        # Standalone checkpoints remain supported.
         tensors = load_file(str(directory / "model.safetensors"))
         adapter._policy.load_state_dict(tensors, strict=True)
         return {

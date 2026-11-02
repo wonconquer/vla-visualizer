@@ -1,6 +1,6 @@
 """Display measured training events separately from explanatory stages."""
 
-from vla_visualizer.ui.presentation import present
+from copy import deepcopy
 
 import streamlit as st
 
@@ -190,4 +190,4 @@ def render_training(record, phase):
         st.write(f"Recorded step: {row['optimizer_step']} / {len(metrics)} step")
         st.caption("Playback explores saved steps; it does not rerun the optimizer.")
     with st.expander("Developer details · training objective / record / modules"):
-        st.json(present({"audit": record["audit"], "event": event, "metric": row}), expanded=False)
+        st.json(deepcopy({"audit": record["audit"], "event": event, "metric": row}), expanded=False)

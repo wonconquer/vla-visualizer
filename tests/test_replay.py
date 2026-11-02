@@ -28,7 +28,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 @pytest.fixture
 def captured():
-    return json.loads((ROOT / "docs/phase3_integration_validation.json").read_text())
+    return json.loads((ROOT / "assets/education/reference_capture.json").read_text())
 
 
 @pytest.fixture
@@ -193,7 +193,7 @@ def test_failed_saved_capture_preserves_last_valid_result(monkeypatch):
     original = Path.read_text
 
     def reject(path, *args, **kwargs):
-        if path.name == "phase3_integration_validation.json":
+        if path.name == "reference_capture.json":
             return '{"invalid":true}'
         return original(path, *args, **kwargs)
 

@@ -24,7 +24,7 @@ ROOT = Path(__file__).resolve().parents[1]
 @pytest.fixture
 def checkpoint_metadata(tmp_path: Path) -> Path:
     """Reproduce the tiny native artifacts from the captured audit, outside the Hub cache."""
-    recorded = json.loads((ROOT / "docs/normalization_audit.json").read_text())
+    recorded = json.loads((ROOT / "tests/fixtures/base_normalization.json").read_text())
     (tmp_path / "config.json").write_text(
         json.dumps(
             {
@@ -211,7 +211,7 @@ def test_candidate_native_state_and_action_math() -> None:
         transition_to_policy_action,
     )
 
-    record = json.loads((ROOT / "docs/normalization_candidates.json").read_text())
+    record = json.loads((ROOT / "tests/fixtures/native_statistics.json").read_text())
     stats = record["normalization"]["pre"]["tensors"]
     tensors = {key: torch.tensor(item["values"]) for key, item in stats.items()}
     features = {

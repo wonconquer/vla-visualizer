@@ -61,7 +61,7 @@ def preflight() -> dict:
     ]
     if missing:
         blockers.append("Pinned LIBERO checkpoint files missing: " + ", ".join(missing))
-    if not (assets_dir() / "phase5_asset_manifest.json").is_file():
+    if not (assets_dir() / "task_assets.json").is_file():
         blockers.append("The selected task has no verified minimal asset manifest.")
     if not importlib.util.find_spec("mujoco"):
         blockers.append("MuJoCo rendering probe cannot run because the dependency is missing.")
@@ -85,7 +85,7 @@ def verify_assets() -> dict:
     from vla_visualizer.adapters.smolvla import file_sha256
 
     directory = assets_dir()
-    manifest = json.loads((directory / "phase5_asset_manifest.json").read_text())
+    manifest = json.loads((directory / "task_assets.json").read_text())
     if (
         manifest.get("repo") != ASSETS_REPO
         or manifest.get("revision") != ASSETS_REVISION

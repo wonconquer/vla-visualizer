@@ -1,7 +1,4 @@
 {
-  "checkpoint": "lerobot/smolvla_base",
-  "revision": "5e8d12a6e2975b0e5e5fce7c8caf47c371d257b6",
-  "lerobot_version": "0.6.1",
   "normalization_method": {
     "VISUAL": "IDENTITY",
     "STATE": "MEAN_STD",
@@ -342,11 +339,5 @@
         "so100-red"
       ]
     }
-  },
-  "verified": false,
-  "semantic_blockers": [
-    "No observation-state statistics are available in this pinned checkpoint.",
-    "Three action profiles have no verified binding to the observation's joint order, units, coordinate/calibration convention, and robot embodiment.",
-    "The previous SO100 reference profile is not verified for these base-model weights."
-  ]
+  }
 }

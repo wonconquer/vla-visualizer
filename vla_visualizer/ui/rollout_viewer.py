@@ -1,6 +1,6 @@
 """Inspect recorded rollouts without starting a simulation."""
 
-from vla_visualizer.ui.presentation import present
+from copy import deepcopy
 
 from pathlib import Path
 import streamlit as st
@@ -107,7 +107,7 @@ def render_rollout(directory: Path):
             key=f"stage_{directory.name}_{index}",
         )
         event = stages[stage]
-        st.write(present(event["description"]))
+        st.write(deepcopy(event["description"]))
         st.caption(
             "Recorded detached summaries. Token norms are not attention, saliency, or confidence. Educational stage selection is separate from execution time."
         )
@@ -120,7 +120,7 @@ def render_rollout(directory: Path):
                     height=160,
                 )
         with st.expander("Recorded tensor statistics / module path"):
-            st.json(present(event))
+            st.json(deepcopy(event))
     else:
         st.info(
             "Not recorded for this request. Internal capture is limited to the first three requests."

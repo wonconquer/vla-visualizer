@@ -1,4 +1,4 @@
-"""Real bounded inspection and same-seed Phase 2 regression, using cached artifacts."""
+"""Bounded inspection and same-seed action regression using cached artifacts."""
 
 import argparse
 from dataclasses import asdict, is_dataclass
@@ -65,12 +65,12 @@ def inspect_real_sample(options: LoadOptions, repeats: int = 3) -> dict:
             if contains_tensor(captures) or captures["hook_count_after"] != captures["hook_count_before"]:
                 raise RuntimeError("Capture retained tensors or hooks.")
             if not torch.isfinite(actual).all() or inspected.metadata["action_chunk_shape"] != [1, 50, 6]:
-                raise RuntimeError("Phase 2 action regression failed.")
+                raise RuntimeError("Action regression failed.")
             if not all(inspected.metadata[key] for key in (
                 "state_normalization_verified", "action_postprocessing_verified", "strict_loading",
                 "frozen", "eval_mode",
             )):
-                raise RuntimeError("Verified Phase 2 safeguards did not pass.")
+                raise RuntimeError("Verified inference safeguards did not pass.")
             checks.append({"repeat": repeat, "max_action_absolute_difference": difference,
                            "hook_count_before": captures["hook_count_before"],
                            "hook_count_after": captures["hook_count_after"],

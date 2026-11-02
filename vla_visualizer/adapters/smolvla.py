@@ -156,7 +156,7 @@ def inspect_checkpoint_normalization(
             "joint_names": checkpoint.joint_names,
             "coordinate_convention": checkpoint.coordinate_convention,
             "statistics_source": "native checkpoint processor files; no override",
-            "pairing_evidence": "docs/SMOLVLA_PAIRING.md and docs/smolvla_pairing.json",
+            "pairing_evidence": "docs/DATA.md and assets/sample_inputs/dataset_metadata.json",
         }
     return report
 
@@ -179,7 +179,7 @@ def require_verified_normalization(report: dict) -> None:
             f"missing={missing}; invalid={invalid}. "
             "State statistics and the action-profile semantics must be verified together. "
             "No dataset-prefix or reference-statistics fallback is allowed. "
-            "See docs/NORMALIZATION_AUDIT.md (upstream LeRobot #4415)."
+            "See docs/DATA.md (upstream LeRobot #4415)."
         )
 
 
@@ -456,7 +456,7 @@ class SmolVLAAdapter(BaseVLAAdapter):
                 if value.device.type != self._options.device or not value.isfinite().all():
                     raise RuntimeError("Preprocessed tensors have an invalid device or value.")
                 if value.is_floating_point() and value.dtype != torch.float32:
-                    raise RuntimeError("Phase 2 requires float32 preprocessed tensors.")
+                    raise RuntimeError("Inference requires float32 preprocessed tensors.")
         self._state_normalization_verified = True
         self._normalized_state = state.detach().cpu().tolist()
         self._observation_provenance = dict(observation.provenance)

@@ -33,8 +33,8 @@ def main():
     from vla_visualizer.adapters.smolvla import file_sha256
     manifest = {"repo": ASSETS_REPO, "revision": ASSETS_REVISION, "task_name": TASK_NAME,
                 "files": {name: file_sha256(directory / name) for name in files}}
-    (directory / "phase5_asset_manifest.json").write_text(json.dumps(manifest, indent=2))
-    print(directory / "phase5_asset_manifest.json")
+    (directory / "task_assets.json").write_text(json.dumps(manifest, indent=2))
+    print(directory / "task_assets.json")
 
 
 if __name__ == "__main__":

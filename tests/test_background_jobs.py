@@ -14,10 +14,10 @@ from vla_visualizer.execution.jobs import TERMINAL, read_json
 
 
 @pytest.mark.integration
-@pytest.mark.skipif(os.environ.get("ECE525_PHASE5_REAL") != "1", reason="Requires actual cache-backed model jobs")
+@pytest.mark.skipif(os.environ.get("ECE525_BACKGROUND_REAL") != "1", reason="Requires actual cache-backed model jobs")
 def test_actual_background_ui_and_cancel(monkeypatch):
     from vla_visualizer.ui.workflow import manager
-    validation_dir = Path(os.environ.get('ECE525_VALIDATION_DIR', ROOT / 'outputs/phase5'))
+    validation_dir = Path(os.environ.get('ECE525_VALIDATION_DIR', ROOT / 'outputs/jobs_validation'))
     output = validation_dir / 'ui_jobs'
     output.mkdir(parents=True, exist_ok=True)
     monkeypatch.setenv("VLA_ARTIFACT_DIR", str(output))

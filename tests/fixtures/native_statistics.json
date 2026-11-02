@@ -1,53 +1,4 @@
 {
-  "checkpoint": "Zekai-Chen/smolvla_so100_pickplace_ft_2cam",
-  "revision": "77172eaffe82c0897945607bfe818b5b164eb57e",
-  "weights_downloaded": false,
-  "inference_tested": false,
-  "recommendation": "Metadata-verified candidate for a future replacement, not integrated or a fix for smolvla_base",
-  "declared_training_dataset": "lerobot/svla_so100_pickplace",
-  "training_dataset_revision": null,
-  "model_input_features": {
-    "observation.state": {
-      "type": "STATE",
-      "shape": [
-        6
-      ]
-    },
-    "observation.images.camera1": {
-      "type": "VISUAL",
-      "shape": [
-        3,
-        256,
-        256
-      ]
-    },
-    "observation.images.camera2": {
-      "type": "VISUAL",
-      "shape": [
-        3,
-        256,
-        256
-      ]
-    }
-  },
-  "model_output_features": {
-    "action": {
-      "type": "ACTION",
-      "shape": [
-        6
-      ]
-    }
-  },
-  "normalization_method": {
-    "VISUAL": "IDENTITY",
-    "STATE": "MEAN_STD",
-    "ACTION": "MEAN_STD"
-  },
-  "config_accepted_by_lerobot_0_6_1": true,
-  "camera_rename_map": {
-    "observation.images.top": "observation.images.camera1",
-    "observation.images.wrist": "observation.images.camera2"
-  },
   "normalization": {
     "pre": {
       "source_sha256": "2ee26fd4a765912f77b60c21f7c8ae9fd68d906966e2f3fe8d08009baa415e84",
@@ -165,14 +116,5 @@
       },
       "max_absolute_difference_from_sample_dataset_statistics": 7.061202637714814e-06
     }
-  },
-  "base_pre_migration_training_configuration": {
-    "checkpoint": "lerobot/smolvla_base",
-    "revision": "3326b100334ffc0a0bd1ec27e3afb1cfa2a6000c",
-    "source": "train_config.json",
-    "source_sha256": "b66ca306a88aa9c784df34a47a15fdcf4fea4431f90b4fa7c7f41a1f0d3b49a1",
-    "dataset_count": 533,
-    "sample_dataset_in_training_list": false,
-    "feature_order_units_calibration_metadata_present": false
   }
 }

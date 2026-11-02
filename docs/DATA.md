@@ -28,13 +28,9 @@ The 24,457-byte episode-0 Parquet supplies recorded training targets. It is not
 a collection of model predictions. End-of-episode padding is excluded from the
 native objective with the action padding mask.
 
-`assets/education/full_loop_replay.json` contains a real completed inference.
-The training summaries contain actual forward, gradient, and update records.
-These are saved examples, not a newly executed model or a simulator video.
-English release annotations replace earlier display descriptions; numerical
-measurements, token IDs, module paths, dimensions, and image bytes are preserved.
-Original machine-local paths are redacted and session ownership fields are omitted.
-The legacy-label translation dictionary retains source lookup keys as JSON
-Unicode escapes so older captures remain importable; display annotations are English.
+`assets/education/` contains saved inference captures and training summaries.
+They supply the viewer's recorded examples; opening one does not run the model.
+Tensor statistics, token IDs, module paths, camera identities, and action values
+come from actual execution. Missing representations are marked unavailable.
 
 See [THIRD_PARTY.md](../THIRD_PARTY.md) for upstream sources and the dataset license.

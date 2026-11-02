@@ -98,8 +98,7 @@ ECE525_REAL_SMOKE=1 HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 \
   tests/test_real_viewer.py
 ```
 
-The implementation and measured limits are described in
-[validation](docs/VALIDATION.md) and [architecture](docs/ARCHITECTURE.md).
+See [testing](docs/TESTING.md) and [architecture](docs/ARCHITECTURE.md) for details.
 
 ## Repository layout
 
@@ -113,11 +112,10 @@ The implementation and measured limits are described in
 | `assets/` | Small real observations, captured inference, and recorded training summaries |
 | `scripts/` | Launch, preparation, and validation commands |
 | `tests/` | Unit, UI, and opt-in real-model tests |
-| `app_baseline.py` | Earlier inference UI retained for regression tests |
+| `app_baseline.py` | Minimal inference UI used by regression tests |
 
 Model weights, full datasets, environments, private receipts, and generated job
-artifacts are excluded. See [supplemental material](docs/SUPPLEMENTAL_MATERIAL.md)
-for the publication scope and [third-party sources](THIRD_PARTY.md) for credits.
+artifacts are excluded. Dataset and model credits are in [THIRD_PARTY.md](THIRD_PARTY.md).
 
 ## Limitations
 

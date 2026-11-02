@@ -1,4 +1,4 @@
-"""Phase 5 web entry point; expensive operations are explicit process jobs."""
+"""Streamlit entry point; model execution uses explicit worker jobs."""
 from vla_visualizer.ui.workflow import main
 
 if __name__ == '__main__':

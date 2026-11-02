@@ -36,9 +36,9 @@ def main():
     attempt = root / "attempts" / (datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S%f") + ".json")
     attempt.parent.mkdir(exist_ok=True)
     atomic_json(attempt, report)
-    metadata = json.loads((ROOT / "docs/smolvla_pairing.json").read_text())
+    metadata = json.loads((ROOT / "assets/sample_inputs/dataset_metadata.json").read_text())
     original = json.loads((ROOT / "assets/sample_inputs/so100_observation.json").read_text())
-    source_files = {f["rfilename"]: f for f in metadata["sample"]["source_files"]}
+    source_files = {f["rfilename"]: f for f in metadata["source_files"]}
     reuse = {}
     if args.reuse_source:
         reuse = {
@@ -142,8 +142,8 @@ def main():
         {
             "repo": report["repo"],
             "revision": report["revision"],
-            "remote_metadata": metadata["dataset"]["old_info"],
-            "metadata_source": "preserved pinned Phase 2 audit; live refresh status in manifest",
+            "remote_metadata": metadata["info"],
+            "metadata_source": "pinned dataset metadata; refresh status recorded in preparation_manifest.json",
             "episodes": prepared,
             "prepared_episode_count": len(prepared),
             "tasks": tasks,

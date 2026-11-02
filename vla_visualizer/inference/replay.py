@@ -84,7 +84,7 @@ def _summary(summary: dict) -> None:
 
 def validate_capture(capture: dict) -> None:
     if capture.get("intermediates", {}).get("schema_version") != 1:
-        raise ReplayError("Unsupported capture schema; expected Phase 3 schema_version=1.")
+        raise ReplayError("Unsupported capture schema; expected schema_version=1.")
     records = capture["intermediates"].get("stages", [])
     if not isinstance(records, list) or len(records) > 64:
         raise ReplayError("Invalid or unbounded stage records.")

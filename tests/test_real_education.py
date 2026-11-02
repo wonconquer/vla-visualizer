@@ -21,7 +21,7 @@ def test_selected_instruction_reaches_actual_model(monkeypatch):
     from vla_visualizer.adapters.smolvla import SmolVLAAdapter, BACKBONE, BACKBONE_REVISION, BACKBONE_FILES
     from vla_visualizer.contracts import LoadOptions
     from transformers import AutoTokenizer
-    destination=ROOT/'outputs/phase5_education/ui_jobs'
+    destination=ROOT/'outputs/instruction_checks/ui_jobs'
     monkeypatch.setenv('VLA_ARTIFACT_DIR',str(destination))
     manager.clear()
     app=AppTest.from_file(ROOT/'app.py',default_timeout=60).run()
@@ -76,4 +76,4 @@ def test_selected_instruction_reaches_actual_model(monkeypatch):
             'hook_count_after':capture['intermediates']['hook_count_after'],
             'replay_additional_jobs':0,'replay_sha256_unchanged':True,
             'browser_visual_acceptance':False,'scope':'Actual model inference and AppTest; browser screenshot acceptance is separate'}
-    (ROOT/'outputs/phase5_education/real_instruction_validation.json').write_text(json.dumps(report,ensure_ascii=False,indent=2))
+    (ROOT/'outputs/instruction_checks/real_instruction_validation.json').write_text(json.dumps(report,ensure_ascii=False,indent=2))
