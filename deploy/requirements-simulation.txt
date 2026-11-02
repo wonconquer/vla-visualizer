@@ -1,0 +1,19 @@
+# Candidate isolated simulation environment; full installation is not verified.
+# Use a separate environment; see docs/VALIDATION.md for current limitations.
+lerobot[smolvla,libero]==0.6.1
+hf-libero==0.1.4
+robosuite==1.4.0
+robomimic==0.2.0
+bddl==1.0.1
+mujoco==3.3.7
+hf-egl-probe==1.0.1
+hydra-core==1.3.2
+easydict==1.13
+thop==0.1.1.post2209072238
+matplotlib==3.10.7
+opencv-python==4.12.0.88
+wandb==0.22.3
+future==1.0.0
+imageio==2.37.0
+imageio-ffmpeg==0.6.0
+PyOpenGL==3.1.10

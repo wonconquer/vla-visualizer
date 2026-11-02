@@ -1,0 +1,59 @@
+{
+  "images": {
+    "observation.images.top": "so100_top.png",
+    "observation.images.wrist": "so100_wrist.png"
+  },
+  "state": [
+    0.3515625,
+    176.8359375,
+    165.05859375,
+    72.0703125,
+    82.96875,
+    0.34530386328697205
+  ],
+  "instruction": "Pick up the cube and place it in the box.",
+  "provenance": {
+    "dataset": "lerobot/svla_so100_pickplace",
+    "revision": "87169e502b742f989b96c952bff7af55e248d467",
+    "license": "apache-2.0",
+    "episode_index": 0,
+    "frame_index": 0,
+    "timestamp_seconds": 0.0,
+    "state_source": "data/chunk-000/episode_000000.parquet",
+    "image_source": "videos/chunk-000/observation.images.top/episode_000000.mp4",
+    "task_source": "meta/tasks.jsonl",
+    "camera_mapping": {
+      "observation.images.top": "observation.images.camera1",
+      "observation.images.wrist": "observation.images.camera2"
+    },
+    "state_names": [
+      "main_shoulder_pan",
+      "main_shoulder_lift",
+      "main_elbow_flex",
+      "main_wrist_flex",
+      "main_wrist_roll",
+      "main_gripper"
+    ],
+    "units": "Legacy pre-PR-777 SO100 calibrated degrees for first five joints; calibrated linear percent for gripper. Source values retained unchanged.",
+    "image_sha256": "e3e6d21eb2001283bba4e04b4f2561b418d019f34ac9568d4b9f24ee182a6a30",
+    "source_sha256": {
+      "episode_000000.parquet": "35d98dcc0bf846749cf1b674011c0fcd4215510a197f7f9f3b3d1a08fec788e9",
+      "tasks.jsonl": "04bb2067bf59f9f5f9b19ed5098558805df30afb3c59228d960d708e745313b7",
+      "top.mp4": "0a2468d734b926fbd1ff39aa02eb9ffea263187b6c904c94284b70e6d485c321",
+      "wrist.mp4": "f0d96c607243383274d1871c043fd429343481e7c477b19169964fbad3b579ac"
+    },
+    "state_semantics": "measured follower joint positions",
+    "action_semantics": "absolute target joint positions, same ordering",
+    "image_sources": {
+      "top": "videos/chunk-000/observation.images.top/episode_000000.mp4",
+      "wrist": "videos/chunk-000/observation.images.wrist/episode_000000.mp4"
+    },
+    "image_sha256_by_camera": {
+      "observation.images.top": "e3e6d21eb2001283bba4e04b4f2561b418d019f34ac9568d4b9f24ee182a6a30",
+      "observation.images.wrist": "64aa9a8cc89004c61f932635da081a82e5cb183c3c8a5c283aeafa94048f96ec"
+    },
+    "paired_checkpoint": "Zekai-Chen/smolvla_so100_pickplace_ft_2cam",
+    "paired_checkpoint_revision": "77172eaffe82c0897945607bfe818b5b164eb57e",
+    "sample_identity": "episode 0 / frame 0 / timestamp 0.0 seconds / task_index 0"
+  }
+}

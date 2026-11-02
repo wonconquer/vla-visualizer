@@ -1,0 +1,352 @@
+{
+  "checkpoint": "lerobot/smolvla_base",
+  "revision": "5e8d12a6e2975b0e5e5fce7c8caf47c371d257b6",
+  "lerobot_version": "0.6.1",
+  "normalization_method": {
+    "VISUAL": "IDENTITY",
+    "STATE": "MEAN_STD",
+    "ACTION": "MEAN_STD"
+  },
+  "model_input_features": {
+    "observation.state": {
+      "type": "STATE",
+      "shape": [
+        6
+      ]
+    },
+    "observation.images.camera1": {
+      "type": "VISUAL",
+      "shape": [
+        3,
+        256,
+        256
+      ]
+    },
+    "observation.images.camera2": {
+      "type": "VISUAL",
+      "shape": [
+        3,
+        256,
+        256
+      ]
+    },
+    "observation.images.camera3": {
+      "type": "VISUAL",
+      "shape": [
+        3,
+        256,
+        256
+      ]
+    }
+  },
+  "model_output_features": {
+    "action": {
+      "type": "ACTION",
+      "shape": [
+        6
+      ]
+    }
+  },
+  "processors": {
+    "preprocessor": {
+      "config_file": "policy_preprocessor.json",
+      "state_file": "policy_preprocessor_step_5_normalizer_processor.safetensors",
+      "state_file_sha256": "490ab239d96e263687c0b2e386a0afbc235a2eceb9857c36ed32f2f162a3e7c8",
+      "features": {
+        "observation.state": {
+          "type": "STATE",
+          "shape": [
+            6
+          ]
+        },
+        "observation.image2": {
+          "type": "VISUAL",
+          "shape": [
+            3,
+            256,
+            256
+          ]
+        },
+        "observation.image": {
+          "type": "VISUAL",
+          "shape": [
+            3,
+            256,
+            256
+          ]
+        },
+        "observation.image3": {
+          "type": "VISUAL",
+          "shape": [
+            3,
+            256,
+            256
+          ]
+        },
+        "action": {
+          "type": "ACTION",
+          "shape": [
+            6
+          ]
+        }
+      },
+      "norm_map": {
+        "VISUAL": "IDENTITY",
+        "STATE": "MEAN_STD",
+        "ACTION": "MEAN_STD"
+      },
+      "required_keys": [
+        "observation.state.mean",
+        "observation.state.std",
+        "action.mean",
+        "action.std"
+      ],
+      "missing_keys": [
+        "observation.state.mean",
+        "observation.state.std",
+        "action.mean",
+        "action.std"
+      ],
+      "available_tensors": {
+        "so100-blue.buffer.action.mean": {
+          "shape": [
+            6
+          ],
+          "dtype": "torch.float32",
+          "values": [
+            1.4211928844451904,
+            125.72054290771484,
+            125.41930389404297,
+            63.783164978027344,
+            -106.54012298583984,
+            3.3484723567962646
+          ],
+          "finite": true,
+          "positive_std": null
+        },
+        "so100-blue.buffer.action.std": {
+          "shape": [
+            6
+          ],
+          "dtype": "torch.float32",
+          "values": [
+            14.081991195678711,
+            39.43141555786133,
+            18.23808479309082,
+            23.48975372314453,
+            38.111175537109375,
+            5.0482869148254395
+          ],
+          "finite": true,
+          "positive_std": true
+        },
+        "so100-red.buffer.action.mean": {
+          "shape": [
+            6
+          ],
+          "dtype": "torch.float32",
+          "values": [
+            2.4387083053588867,
+            124.93787384033203,
+            123.55780029296875,
+            66.99261474609375,
+            -103.8768310546875,
+            2.8912413120269775
+          ],
+          "finite": true,
+          "positive_std": null
+        },
+        "so100-red.buffer.action.std": {
+          "shape": [
+            6
+          ],
+          "dtype": "torch.float32",
+          "values": [
+            14.299178123474121,
+            42.77220916748047,
+            18.876314163208008,
+            21.651918411254883,
+            33.53406524658203,
+            4.47797155380249
+          ],
+          "finite": true,
+          "positive_std": true
+        },
+        "so100.buffer.action.mean": {
+          "shape": [
+            6
+          ],
+          "dtype": "torch.float32",
+          "values": [
+            1.5959141254425049,
+            119.9442367553711,
+            109.769775390625,
+            56.70551300048828,
+            -27.422693252563477,
+            12.002785682678223
+          ],
+          "finite": true,
+          "positive_std": null
+        },
+        "so100.buffer.action.std": {
+          "shape": [
+            6
+          ],
+          "dtype": "torch.float32",
+          "values": [
+            26.39177894592285,
+            52.41140365600586,
+            49.85380554199219,
+            36.9983024597168,
+            59.35995101928711,
+            19.039955139160156
+          ],
+          "finite": true,
+          "positive_std": true
+        }
+      },
+      "invalid_tensors": [],
+      "dataset_prefixes": [
+        "so100",
+        "so100-blue",
+        "so100-red"
+      ]
+    },
+    "postprocessor": {
+      "config_file": "policy_postprocessor.json",
+      "state_file": "policy_postprocessor_step_0_unnormalizer_processor.safetensors",
+      "state_file_sha256": "490ab239d96e263687c0b2e386a0afbc235a2eceb9857c36ed32f2f162a3e7c8",
+      "features": {
+        "action": {
+          "type": "ACTION",
+          "shape": [
+            6
+          ]
+        }
+      },
+      "norm_map": {
+        "VISUAL": "IDENTITY",
+        "STATE": "MEAN_STD",
+        "ACTION": "MEAN_STD"
+      },
+      "required_keys": [
+        "action.mean",
+        "action.std"
+      ],
+      "missing_keys": [
+        "action.mean",
+        "action.std"
+      ],
+      "available_tensors": {
+        "so100-blue.buffer.action.mean": {
+          "shape": [
+            6
+          ],
+          "dtype": "torch.float32",
+          "values": [
+            1.4211928844451904,
+            125.72054290771484,
+            125.41930389404297,
+            63.783164978027344,
+            -106.54012298583984,
+            3.3484723567962646
+          ],
+          "finite": true,
+          "positive_std": null
+        },
+        "so100-blue.buffer.action.std": {
+          "shape": [
+            6
+          ],
+          "dtype": "torch.float32",
+          "values": [
+            14.081991195678711,
+            39.43141555786133,
+            18.23808479309082,
+            23.48975372314453,
+            38.111175537109375,
+            5.0482869148254395
+          ],
+          "finite": true,
+          "positive_std": true
+        },
+        "so100-red.buffer.action.mean": {
+          "shape": [
+            6
+          ],
+          "dtype": "torch.float32",
+          "values": [
+            2.4387083053588867,
+            124.93787384033203,
+            123.55780029296875,
+            66.99261474609375,
+            -103.8768310546875,
+            2.8912413120269775
+          ],
+          "finite": true,
+          "positive_std": null
+        },
+        "so100-red.buffer.action.std": {
+          "shape": [
+            6
+          ],
+          "dtype": "torch.float32",
+          "values": [
+            14.299178123474121,
+            42.77220916748047,
+            18.876314163208008,
+            21.651918411254883,
+            33.53406524658203,
+            4.47797155380249
+          ],
+          "finite": true,
+          "positive_std": true
+        },
+        "so100.buffer.action.mean": {
+          "shape": [
+            6
+          ],
+          "dtype": "torch.float32",
+          "values": [
+            1.5959141254425049,
+            119.9442367553711,
+            109.769775390625,
+            56.70551300048828,
+            -27.422693252563477,
+            12.002785682678223
+          ],
+          "finite": true,
+          "positive_std": null
+        },
+        "so100.buffer.action.std": {
+          "shape": [
+            6
+          ],
+          "dtype": "torch.float32",
+          "values": [
+            26.39177894592285,
+            52.41140365600586,
+            49.85380554199219,
+            36.9983024597168,
+            59.35995101928711,
+            19.039955139160156
+          ],
+          "finite": true,
+          "positive_std": true
+        }
+      },
+      "invalid_tensors": [],
+      "dataset_prefixes": [
+        "so100",
+        "so100-blue",
+        "so100-red"
+      ]
+    }
+  },
+  "verified": false,
+  "semantic_blockers": [
+    "No observation-state statistics are available in this pinned checkpoint.",
+    "Three action profiles have no verified binding to the observation's joint order, units, coordinate/calibration convention, and robot embodiment.",
+    "The previous SO100 reference profile is not verified for these base-model weights."
+  ]
+}

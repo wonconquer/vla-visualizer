@@ -1,0 +1,2032 @@
+{
+  "actions": [
+    [
+      0.2631053924560547,
+      177.20497131347656,
+      164.47064208984375,
+      72.0412826538086,
+      83.05445098876953,
+      0.1405186653137207
+    ],
+    [
+      0.19406604766845703,
+      176.91995239257812,
+      164.50494384765625,
+      71.89706420898438,
+      83.04672241210938,
+      0.12409067153930664
+    ],
+    [
+      0.2533836364746094,
+      176.74378967285156,
+      164.54481506347656,
+      72.2411880493164,
+      82.86937713623047,
+      0.23052549362182617
+    ],
+    [
+      1.0861501693725586,
+      176.7092742919922,
+      164.5958251953125,
+      72.27996063232422,
+      82.2829818725586,
+      0.2805294990539551
+    ],
+    [
+      0.7406511306762695,
+      176.86892700195312,
+      164.44300842285156,
+      72.24358367919922,
+      82.53596496582031,
+      0.23752164840698242
+    ],
+    [
+      0.828765869140625,
+      176.93035888671875,
+      164.48538208007812,
+      72.25788879394531,
+      82.64674377441406,
+      0.2694220542907715
+    ],
+    [
+      0.712855339050293,
+      176.82864379882812,
+      164.3516082763672,
+      72.3284912109375,
+      82.73609924316406,
+      0.2467193603515625
+    ],
+    [
+      0.7555379867553711,
+      176.8617706298828,
+      164.3544464111328,
+      72.29554748535156,
+      82.71050262451172,
+      0.2747325897216797
+    ],
+    [
+      0.7565145492553711,
+      176.95654296875,
+      164.47181701660156,
+      72.27779388427734,
+      82.793212890625,
+      0.29212427139282227
+    ],
+    [
+      0.8627138137817383,
+      177.01463317871094,
+      164.4092559814453,
+      72.25385284423828,
+      82.71815490722656,
+      0.25920772552490234
+    ],
+    [
+      0.7910842895507812,
+      176.8809051513672,
+      164.3777618408203,
+      72.13409423828125,
+      82.93592071533203,
+      0.18665838241577148
+    ],
+    [
+      0.819300651550293,
+      176.94320678710938,
+      164.4524383544922,
+      72.35639953613281,
+      83.02942657470703,
+      0.23601722717285156
+    ],
+    [
+      0.8279304504394531,
+      176.69720458984375,
+      164.5040283203125,
+      72.1449203491211,
+      83.07583618164062,
+      0.24764394760131836
+    ],
+    [
+      1.0084428787231445,
+      177.165283203125,
+      164.5673828125,
+      72.3053970336914,
+      82.96730041503906,
+      0.17672300338745117
+    ],
+    [
+      0.8134222030639648,
+      177.3245849609375,
+      164.55096435546875,
+      72.41069030761719,
+      83.60261535644531,
+      0.16440916061401367
+    ],
+    [
+      0.7670860290527344,
+      177.17648315429688,
+      164.4809112548828,
+      72.3321533203125,
+      83.4683837890625,
+      0.20837068557739258
+    ],
+    [
+      0.7845783233642578,
+      177.133544921875,
+      164.458740234375,
+      72.35095977783203,
+      83.350341796875,
+      0.19772052764892578
+    ],
+    [
+      0.9656343460083008,
+      177.39146423339844,
+      164.39585876464844,
+      72.0826644897461,
+      83.2343978881836,
+      0.15860509872436523
+    ],
+    [
+      0.7501449584960938,
+      177.27078247070312,
+      163.96844482421875,
+      71.76248931884766,
+      83.34368896484375,
+      0.19539451599121094
+    ],
+    [
+      0.7015619277954102,
+      177.02835083007812,
+      164.30050659179688,
+      71.78205871582031,
+      83.12039184570312,
+      0.18169116973876953
+    ],
+    [
+      1.0367603302001953,
+      176.7891387939453,
+      164.0120849609375,
+      71.63695526123047,
+      83.13500213623047,
+      0.2711319923400879
+    ],
+    [
+      1.3969593048095703,
+      173.5780029296875,
+      160.24398803710938,
+      68.86273193359375,
+      82.86991882324219,
+      0.12485027313232422
+    ],
+    [
+      1.4898061752319336,
+      175.17559814453125,
+      162.02395629882812,
+      68.86990356445312,
+      82.5291519165039,
+      0.07370424270629883
+    ],
+    [
+      1.1692447662353516,
+      176.3351287841797,
+      163.24595642089844,
+      69.4208984375,
+      82.42363739013672,
+      0.11268854141235352
+    ],
+    [
+      1.242945671081543,
+      176.87332153320312,
+      164.19622802734375,
+      70.78366088867188,
+      82.75353240966797,
+      0.19637298583984375
+    ],
+    [
+      0.6842098236083984,
+      177.06109619140625,
+      163.91171264648438,
+      70.61735534667969,
+      82.6963119506836,
+      0.21523666381835938
+    ],
+    [
+      0.3318452835083008,
+      176.83506774902344,
+      163.2386016845703,
+      70.1551284790039,
+      82.7612075805664,
+      0.18151235580444336
+    ],
+    [
+      0.8241300582885742,
+      171.93447875976562,
+      158.87281799316406,
+      67.9559326171875,
+      82.56379699707031,
+      0.17416906356811523
+    ],
+    [
+      1.582855224609375,
+      169.09678649902344,
+      157.67820739746094,
+      67.03131866455078,
+      81.52381134033203,
+      0.2693476676940918
+    ],
+    [
+      1.3494577407836914,
+      176.00213623046875,
+      162.7711944580078,
+      69.62635040283203,
+      81.97238159179688,
+      0.2868537902832031
+    ],
+    [
+      1.234848976135254,
+      174.78305053710938,
+      160.43247985839844,
+      68.8506851196289,
+      81.90921020507812,
+      0.19603824615478516
+    ],
+    [
+      1.1355037689208984,
+      173.87307739257812,
+      158.86102294921875,
+      69.23400115966797,
+      81.65727996826172,
+      0.2215290069580078
+    ],
+    [
+      0.8331451416015625,
+      169.8878936767578,
+      156.4016571044922,
+      67.59854888916016,
+      81.62749481201172,
+      0.3158574104309082
+    ],
+    [
+      0.5508146286010742,
+      163.9720458984375,
+      152.20021057128906,
+      66.94540405273438,
+      81.02913665771484,
+      0.2362375259399414
+    ],
+    [
+      0.6307010650634766,
+      158.18434143066406,
+      149.14801025390625,
+      64.5748291015625,
+      80.65323638916016,
+      0.12703180313110352
+    ],
+    [
+      0.32510948181152344,
+      156.24313354492188,
+      147.9994659423828,
+      64.0651626586914,
+      80.5849838256836,
+      0.33524370193481445
+    ],
+    [
+      0.6565103530883789,
+      152.1758270263672,
+      146.09356689453125,
+      63.128536224365234,
+      80.45407104492188,
+      0.49321413040161133
+    ],
+    [
+      0.2548713684082031,
+      150.31568908691406,
+      144.410400390625,
+      63.038185119628906,
+      81.02110290527344,
+      0.4696927070617676
+    ],
+    [
+      -0.4457521438598633,
+      149.14852905273438,
+      144.06040954589844,
+      62.02199935913086,
+      81.5212173461914,
+      0.5893349647521973
+    ],
+    [
+      -0.10602760314941406,
+      150.94667053222656,
+      144.98123168945312,
+      62.65657424926758,
+      82.33154296875,
+      0.6753506660461426
+    ],
+    [
+      -0.14479541778564453,
+      152.2433624267578,
+      146.281005859375,
+      62.48749923706055,
+      82.08574676513672,
+      0.5058364868164062
+    ],
+    [
+      -0.5453519821166992,
+      151.9216766357422,
+      145.44351196289062,
+      63.222408294677734,
+      82.10908508300781,
+      0.6152510643005371
+    ],
+    [
+      -0.27783203125,
+      150.5186309814453,
+      144.02081298828125,
+      63.14689254760742,
+      81.75189208984375,
+      0.4332551956176758
+    ],
+    [
+      -0.05008983612060547,
+      150.4264678955078,
+      143.73245239257812,
+      62.68300247192383,
+      82.24861907958984,
+      0.5848598480224609
+    ],
+    [
+      0.017755508422851562,
+      148.94691467285156,
+      143.74456787109375,
+      61.421295166015625,
+      81.71246337890625,
+      0.9719538688659668
+    ],
+    [
+      -0.17673397064208984,
+      150.73214721679688,
+      144.60092163085938,
+      61.384422302246094,
+      81.9714584350586,
+      0.8329215049743652
+    ],
+    [
+      2.248048782348633,
+      152.80091857910156,
+      144.9338836669922,
+      62.114627838134766,
+      81.94451141357422,
+      1.0836801528930664
+    ],
+    [
+      1.9981918334960938,
+      156.7561492919922,
+      146.60174560546875,
+      64.12317657470703,
+      81.43118286132812,
+      0.7495079040527344
+    ],
+    [
+      1.8182783126831055,
+      159.76136779785156,
+      147.24874877929688,
+      65.74237823486328,
+      81.69874572753906,
+      0.6511435508728027
+    ],
+    [
+      1.5601930618286133,
+      162.01043701171875,
+      148.8667449951172,
+      66.5806655883789,
+      80.76500701904297,
+      0.48996639251708984
+    ]
+  ],
+  "intermediates": {},
+  "metadata": {
+    "checkpoint": "Zekai-Chen/smolvla_so100_pickplace_ft_2cam",
+    "revision": "77172eaffe82c0897945607bfe818b5b164eb57e",
+    "snapshot_path": "<original-model-cache>/hub/models--Zekai-Chen--smolvla_so100_pickplace_ft_2cam/snapshots/77172eaffe82c0897945607bfe818b5b164eb57e",
+    "strict_loading": true,
+    "loading_keys": {
+      "tensor_count": 500,
+      "missing": [],
+      "unexpected": []
+    },
+    "state_normalization_verified": true,
+    "normalized_state": [
+      [
+        -0.5055083632469177,
+        0.878452479839325,
+        0.9866241216659546,
+        0.5261756777763367,
+        -0.23134669661521912,
+        -0.9222036600112915
+      ]
+    ],
+    "action_postprocessing_verified": true,
+    "normalized_first_action": [
+      -0.5091046094894409,
+      0.8790141344070435,
+      0.9855883717536926,
+      0.536946177482605,
+      -0.22250914573669434,
+      -0.8004452586174011
+    ],
+    "action_chunk_shape": [
+      1,
+      50,
+      6
+    ],
+    "action_output_dtype": "torch.float32",
+    "action_output_device": "cpu",
+    "action_names": [
+      "shoulder_pan",
+      "shoulder_lift",
+      "elbow_flex",
+      "wrist_flex",
+      "wrist_roll",
+      "gripper"
+    ],
+    "coordinate_convention": "Legacy pre-PR-777 SO100: first five joints in calibrated degrees, gripper in calibrated percent (nominal 0–100). State is measured follower position; actions are absolute target positions.",
+    "observation_provenance": {
+      "dataset": "lerobot/svla_so100_pickplace",
+      "revision": "87169e502b742f989b96c952bff7af55e248d467",
+      "license": "apache-2.0",
+      "episode_index": 0,
+      "frame_index": 0,
+      "timestamp_seconds": 0.0,
+      "state_source": "data/chunk-000/episode_000000.parquet",
+      "image_source": "videos/chunk-000/observation.images.top/episode_000000.mp4",
+      "task_source": "meta/tasks.jsonl",
+      "camera_mapping": {
+        "observation.images.top": "observation.images.camera1",
+        "observation.images.wrist": "observation.images.camera2"
+      },
+      "state_names": [
+        "main_shoulder_pan",
+        "main_shoulder_lift",
+        "main_elbow_flex",
+        "main_wrist_flex",
+        "main_wrist_roll",
+        "main_gripper"
+      ],
+      "units": "Legacy pre-PR-777 SO100 calibrated degrees for first five joints; calibrated linear percent for gripper. Source values retained unchanged.",
+      "image_sha256": "e3e6d21eb2001283bba4e04b4f2561b418d019f34ac9568d4b9f24ee182a6a30",
+      "source_sha256": {
+        "episode_000000.parquet": "35d98dcc0bf846749cf1b674011c0fcd4215510a197f7f9f3b3d1a08fec788e9",
+        "tasks.jsonl": "04bb2067bf59f9f5f9b19ed5098558805df30afb3c59228d960d708e745313b7",
+        "top.mp4": "0a2468d734b926fbd1ff39aa02eb9ffea263187b6c904c94284b70e6d485c321",
+        "wrist.mp4": "f0d96c607243383274d1871c043fd429343481e7c477b19169964fbad3b579ac"
+      },
+      "state_semantics": "measured follower joint positions",
+      "action_semantics": "absolute target joint positions, same ordering",
+      "image_sources": {
+        "top": "videos/chunk-000/observation.images.top/episode_000000.mp4",
+        "wrist": "videos/chunk-000/observation.images.wrist/episode_000000.mp4"
+      },
+      "image_sha256_by_camera": {
+        "observation.images.top": "e3e6d21eb2001283bba4e04b4f2561b418d019f34ac9568d4b9f24ee182a6a30",
+        "observation.images.wrist": "64aa9a8cc89004c61f932635da081a82e5cb183c3c8a5c283aeafa94048f96ec"
+      },
+      "paired_checkpoint": "Zekai-Chen/smolvla_so100_pickplace_ft_2cam",
+      "paired_checkpoint_revision": "77172eaffe82c0897945607bfe818b5b164eb57e",
+      "sample_identity": "episode 0 / frame 0 / timestamp 0.0 seconds / task_index 0"
+    },
+    "process_peak_rss_bytes": 3233574912,
+    "backbone": "HuggingFaceTB/SmolVLM2-500M-Video-Instruct",
+    "backbone_revision": "7b375e1b73b11138ff12fe22c8f2822d8fe03467",
+    "device": "cpu",
+    "dtype": "torch.float32",
+    "seed": 0,
+    "load_seconds": 18.12770119799825,
+    "inference_seconds": 1.5719759939966025,
+    "native_action_shape": [
+      1,
+      50,
+      6
+    ],
+    "action_shape": [
+      50,
+      6
+    ],
+    "action_scale": "verified checkpoint scale, unnormalized",
+    "normalization_verified": true,
+    "normalization_audit": {
+      "checkpoint": "Zekai-Chen/smolvla_so100_pickplace_ft_2cam",
+      "revision": "77172eaffe82c0897945607bfe818b5b164eb57e",
+      "lerobot_version": "0.6.1",
+      "normalization_method": {
+        "VISUAL": "IDENTITY",
+        "STATE": "MEAN_STD",
+        "ACTION": "MEAN_STD"
+      },
+      "model_input_features": {
+        "observation.state": {
+          "type": "STATE",
+          "shape": [
+            6
+          ]
+        },
+        "observation.images.camera1": {
+          "type": "VISUAL",
+          "shape": [
+            3,
+            256,
+            256
+          ]
+        },
+        "observation.images.camera2": {
+          "type": "VISUAL",
+          "shape": [
+            3,
+            256,
+            256
+          ]
+        }
+      },
+      "model_output_features": {
+        "action": {
+          "type": "ACTION",
+          "shape": [
+            6
+          ]
+        }
+      },
+      "processors": {
+        "preprocessor": {
+          "config_file": "policy_preprocessor.json",
+          "state_file": "policy_preprocessor_step_5_normalizer_processor.safetensors",
+          "state_file_sha256": "2ee26fd4a765912f77b60c21f7c8ae9fd68d906966e2f3fe8d08009baa415e84",
+          "features": {
+            "observation.state": {
+              "type": "STATE",
+              "shape": [
+                6
+              ]
+            },
+            "observation.images.camera1": {
+              "type": "VISUAL",
+              "shape": [
+                3,
+                256,
+                256
+              ]
+            },
+            "observation.images.camera2": {
+              "type": "VISUAL",
+              "shape": [
+                3,
+                256,
+                256
+              ]
+            },
+            "action": {
+              "type": "ACTION",
+              "shape": [
+                6
+              ]
+            }
+          },
+          "norm_map": {
+            "VISUAL": "IDENTITY",
+            "STATE": "MEAN_STD",
+            "ACTION": "MEAN_STD"
+          },
+          "required_keys": [
+            "observation.state.mean",
+            "observation.state.std",
+            "action.mean",
+            "action.std"
+          ],
+          "missing_keys": [],
+          "available_tensors": {
+            "action.count": {
+              "shape": [
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                19631.0
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "action.max": {
+              "shape": [
+                6
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                72.7734375,
+                179.47265625,
+                164.619140625,
+                96.591796875,
+                123.57421875,
+                34.93077850341797
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "action.mean": {
+              "shape": [
+                6
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                14.511382102966309,
+                146.44866943359375,
+                143.3157196044922,
+                62.96079635620117,
+                85.83100128173828,
+                7.781595230102539
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "action.min": {
+              "shape": [
+                6
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                -37.177734375,
+                48.8671875,
+                40.95703125,
+                9.66796875,
+                56.25,
+                0.0
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "action.std": {
+              "shape": [
+                6
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                27.9869327545166,
+                34.98953628540039,
+                21.46426010131836,
+                16.911357879638672,
+                12.478363990783691,
+                9.546032905578613
+              ],
+              "finite": true,
+              "positive_std": true
+            },
+            "episode_index.count": {
+              "shape": [
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                19631.0
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "episode_index.max": {
+              "shape": [
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                49.0
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "episode_index.mean": {
+              "shape": [
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                24.629209518432617
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "episode_index.min": {
+              "shape": [
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                0.0
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "episode_index.std": {
+              "shape": [
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                14.522631645202637
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "frame_index.count": {
+              "shape": [
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                19631.0
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "frame_index.max": {
+              "shape": [
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                574.0
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "frame_index.mean": {
+              "shape": [
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                198.1536407470703
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "frame_index.min": {
+              "shape": [
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                0.0
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "frame_index.std": {
+              "shape": [
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                117.80806732177734
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "index.count": {
+              "shape": [
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                19631.0
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "index.max": {
+              "shape": [
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                19630.0
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "index.mean": {
+              "shape": [
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                9815.0
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "index.min": {
+              "shape": [
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                0.0
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "index.std": {
+              "shape": [
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                5666.9814453125
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "observation.images.top.count": {
+              "shape": [
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                5019.0
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "observation.images.top.max": {
+              "shape": [
+                3,
+                1,
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                [
+                  [
+                    1.0
+                  ]
+                ],
+                [
+                  [
+                    1.0
+                  ]
+                ],
+                [
+                  [
+                    1.0
+                  ]
+                ]
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "observation.images.top.mean": {
+              "shape": [
+                3,
+                1,
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                [
+                  [
+                    0.48500001430511475
+                  ]
+                ],
+                [
+                  [
+                    0.4560000002384186
+                  ]
+                ],
+                [
+                  [
+                    0.4059999883174896
+                  ]
+                ]
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "observation.images.top.min": {
+              "shape": [
+                3,
+                1,
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                [
+                  [
+                    0.0
+                  ]
+                ],
+                [
+                  [
+                    0.019607843831181526
+                  ]
+                ],
+                [
+                  [
+                    0.0
+                  ]
+                ]
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "observation.images.top.std": {
+              "shape": [
+                3,
+                1,
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                [
+                  [
+                    0.2290000021457672
+                  ]
+                ],
+                [
+                  [
+                    0.2240000069141388
+                  ]
+                ],
+                [
+                  [
+                    0.22499999403953552
+                  ]
+                ]
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "observation.images.wrist.count": {
+              "shape": [
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                5019.0
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "observation.images.wrist.max": {
+              "shape": [
+                3,
+                1,
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                [
+                  [
+                    1.0
+                  ]
+                ],
+                [
+                  [
+                    1.0
+                  ]
+                ],
+                [
+                  [
+                    1.0
+                  ]
+                ]
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "observation.images.wrist.mean": {
+              "shape": [
+                3,
+                1,
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                [
+                  [
+                    0.48500001430511475
+                  ]
+                ],
+                [
+                  [
+                    0.4560000002384186
+                  ]
+                ],
+                [
+                  [
+                    0.4059999883174896
+                  ]
+                ]
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "observation.images.wrist.min": {
+              "shape": [
+                3,
+                1,
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                [
+                  [
+                    0.0
+                  ]
+                ],
+                [
+                  [
+                    0.0
+                  ]
+                ],
+                [
+                  [
+                    0.0
+                  ]
+                ]
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "observation.images.wrist.std": {
+              "shape": [
+                3,
+                1,
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                [
+                  [
+                    0.2290000021457672
+                  ]
+                ],
+                [
+                  [
+                    0.2240000069141388
+                  ]
+                ],
+                [
+                  [
+                    0.22499999403953552
+                  ]
+                ]
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "observation.state.count": {
+              "shape": [
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                19631.0
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "observation.state.max": {
+              "shape": [
+                6
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                72.421875,
+                179.82421875,
+                165.05859375,
+                95.712890625,
+                123.134765625,
+                34.66850662231445
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "observation.state.mean": {
+              "shape": [
+                6
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                14.471714973449707,
+                145.7694549560547,
+                144.3857421875,
+                63.226173400878906,
+                85.84174346923828,
+                9.354485511779785
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "observation.state.min": {
+              "shape": [
+                6
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                -37.177734375,
+                48.076171875,
+                43.505859375,
+                9.931640625,
+                56.689453125,
+                -0.20718231797218323
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "observation.state.std": {
+              "shape": [
+                6
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                27.932579040527344,
+                35.365013122558594,
+                20.95311737060547,
+                16.808338165283203,
+                12.418562889099121,
+                9.76918888092041
+              ],
+              "finite": true,
+              "positive_std": true
+            },
+            "task_index.count": {
+              "shape": [
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                19631.0
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "task_index.max": {
+              "shape": [
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                0.0
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "task_index.mean": {
+              "shape": [
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                0.0
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "task_index.min": {
+              "shape": [
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                0.0
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "task_index.std": {
+              "shape": [
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                0.0
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "timestamp.count": {
+              "shape": [
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                19631.0
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "timestamp.max": {
+              "shape": [
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                19.133333206176758
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "timestamp.mean": {
+              "shape": [
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                6.60512113571167
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "timestamp.min": {
+              "shape": [
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                0.0
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "timestamp.std": {
+              "shape": [
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                3.9269356727600098
+              ],
+              "finite": true,
+              "positive_std": null
+            }
+          },
+          "invalid_tensors": [],
+          "dataset_prefixes": []
+        },
+        "postprocessor": {
+          "config_file": "policy_postprocessor.json",
+          "state_file": "policy_postprocessor_step_0_unnormalizer_processor.safetensors",
+          "state_file_sha256": "2ee26fd4a765912f77b60c21f7c8ae9fd68d906966e2f3fe8d08009baa415e84",
+          "features": {
+            "action": {
+              "type": "ACTION",
+              "shape": [
+                6
+              ]
+            }
+          },
+          "norm_map": {
+            "VISUAL": "IDENTITY",
+            "STATE": "MEAN_STD",
+            "ACTION": "MEAN_STD"
+          },
+          "required_keys": [
+            "action.mean",
+            "action.std"
+          ],
+          "missing_keys": [],
+          "available_tensors": {
+            "action.count": {
+              "shape": [
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                19631.0
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "action.max": {
+              "shape": [
+                6
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                72.7734375,
+                179.47265625,
+                164.619140625,
+                96.591796875,
+                123.57421875,
+                34.93077850341797
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "action.mean": {
+              "shape": [
+                6
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                14.511382102966309,
+                146.44866943359375,
+                143.3157196044922,
+                62.96079635620117,
+                85.83100128173828,
+                7.781595230102539
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "action.min": {
+              "shape": [
+                6
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                -37.177734375,
+                48.8671875,
+                40.95703125,
+                9.66796875,
+                56.25,
+                0.0
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "action.std": {
+              "shape": [
+                6
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                27.9869327545166,
+                34.98953628540039,
+                21.46426010131836,
+                16.911357879638672,
+                12.478363990783691,
+                9.546032905578613
+              ],
+              "finite": true,
+              "positive_std": true
+            },
+            "episode_index.count": {
+              "shape": [
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                19631.0
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "episode_index.max": {
+              "shape": [
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                49.0
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "episode_index.mean": {
+              "shape": [
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                24.629209518432617
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "episode_index.min": {
+              "shape": [
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                0.0
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "episode_index.std": {
+              "shape": [
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                14.522631645202637
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "frame_index.count": {
+              "shape": [
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                19631.0
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "frame_index.max": {
+              "shape": [
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                574.0
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "frame_index.mean": {
+              "shape": [
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                198.1536407470703
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "frame_index.min": {
+              "shape": [
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                0.0
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "frame_index.std": {
+              "shape": [
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                117.80806732177734
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "index.count": {
+              "shape": [
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                19631.0
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "index.max": {
+              "shape": [
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                19630.0
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "index.mean": {
+              "shape": [
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                9815.0
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "index.min": {
+              "shape": [
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                0.0
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "index.std": {
+              "shape": [
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                5666.9814453125
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "observation.images.top.count": {
+              "shape": [
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                5019.0
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "observation.images.top.max": {
+              "shape": [
+                3,
+                1,
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                [
+                  [
+                    1.0
+                  ]
+                ],
+                [
+                  [
+                    1.0
+                  ]
+                ],
+                [
+                  [
+                    1.0
+                  ]
+                ]
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "observation.images.top.mean": {
+              "shape": [
+                3,
+                1,
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                [
+                  [
+                    0.48500001430511475
+                  ]
+                ],
+                [
+                  [
+                    0.4560000002384186
+                  ]
+                ],
+                [
+                  [
+                    0.4059999883174896
+                  ]
+                ]
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "observation.images.top.min": {
+              "shape": [
+                3,
+                1,
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                [
+                  [
+                    0.0
+                  ]
+                ],
+                [
+                  [
+                    0.019607843831181526
+                  ]
+                ],
+                [
+                  [
+                    0.0
+                  ]
+                ]
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "observation.images.top.std": {
+              "shape": [
+                3,
+                1,
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                [
+                  [
+                    0.2290000021457672
+                  ]
+                ],
+                [
+                  [
+                    0.2240000069141388
+                  ]
+                ],
+                [
+                  [
+                    0.22499999403953552
+                  ]
+                ]
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "observation.images.wrist.count": {
+              "shape": [
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                5019.0
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "observation.images.wrist.max": {
+              "shape": [
+                3,
+                1,
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                [
+                  [
+                    1.0
+                  ]
+                ],
+                [
+                  [
+                    1.0
+                  ]
+                ],
+                [
+                  [
+                    1.0
+                  ]
+                ]
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "observation.images.wrist.mean": {
+              "shape": [
+                3,
+                1,
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                [
+                  [
+                    0.48500001430511475
+                  ]
+                ],
+                [
+                  [
+                    0.4560000002384186
+                  ]
+                ],
+                [
+                  [
+                    0.4059999883174896
+                  ]
+                ]
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "observation.images.wrist.min": {
+              "shape": [
+                3,
+                1,
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                [
+                  [
+                    0.0
+                  ]
+                ],
+                [
+                  [
+                    0.0
+                  ]
+                ],
+                [
+                  [
+                    0.0
+                  ]
+                ]
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "observation.images.wrist.std": {
+              "shape": [
+                3,
+                1,
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                [
+                  [
+                    0.2290000021457672
+                  ]
+                ],
+                [
+                  [
+                    0.2240000069141388
+                  ]
+                ],
+                [
+                  [
+                    0.22499999403953552
+                  ]
+                ]
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "observation.state.count": {
+              "shape": [
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                19631.0
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "observation.state.max": {
+              "shape": [
+                6
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                72.421875,
+                179.82421875,
+                165.05859375,
+                95.712890625,
+                123.134765625,
+                34.66850662231445
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "observation.state.mean": {
+              "shape": [
+                6
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                14.471714973449707,
+                145.7694549560547,
+                144.3857421875,
+                63.226173400878906,
+                85.84174346923828,
+                9.354485511779785
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "observation.state.min": {
+              "shape": [
+                6
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                -37.177734375,
+                48.076171875,
+                43.505859375,
+                9.931640625,
+                56.689453125,
+                -0.20718231797218323
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "observation.state.std": {
+              "shape": [
+                6
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                27.932579040527344,
+                35.365013122558594,
+                20.95311737060547,
+                16.808338165283203,
+                12.418562889099121,
+                9.76918888092041
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "task_index.count": {
+              "shape": [
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                19631.0
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "task_index.max": {
+              "shape": [
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                0.0
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "task_index.mean": {
+              "shape": [
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                0.0
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "task_index.min": {
+              "shape": [
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                0.0
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "task_index.std": {
+              "shape": [
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                0.0
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "timestamp.count": {
+              "shape": [
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                19631.0
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "timestamp.max": {
+              "shape": [
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                19.133333206176758
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "timestamp.mean": {
+              "shape": [
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                6.60512113571167
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "timestamp.min": {
+              "shape": [
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                0.0
+              ],
+              "finite": true,
+              "positive_std": null
+            },
+            "timestamp.std": {
+              "shape": [
+                1
+              ],
+              "dtype": "torch.float32",
+              "values": [
+                3.9269356727600098
+              ],
+              "finite": true,
+              "positive_std": null
+            }
+          },
+          "invalid_tensors": [],
+          "dataset_prefixes": []
+        }
+      },
+      "verified": true,
+      "semantic_blockers": [],
+      "artifact_hash_mismatches": [],
+      "provenance": {
+        "dataset": "lerobot/svla_so100_pickplace",
+        "dataset_revision": "87169e502b742f989b96c952bff7af55e248d467",
+        "joint_names": [
+          "shoulder_pan",
+          "shoulder_lift",
+          "elbow_flex",
+          "wrist_flex",
+          "wrist_roll",
+          "gripper"
+        ],
+        "coordinate_convention": "Legacy pre-PR-777 SO100: first five joints in calibrated degrees, gripper in calibrated percent (nominal 0–100). State is measured follower position; actions are absolute target positions.",
+        "statistics_source": "native checkpoint processor files; no override",
+        "pairing_evidence": "docs/SMOLVLA_PAIRING.md and docs/smolvla_pairing.json"
+      }
+    },
+    "denoising_steps": 10,
+    "frozen": true,
+    "eval_mode": true,
+    "parameter_count": 450046176,
+    "parameter_bytes": 1800184704,
+    "input_shapes": {
+      "observation.state": [
+        1,
+        6
+      ],
+      "observation.images.camera1": [
+        1,
+        3,
+        480,
+        640
+      ],
+      "observation.images.camera2": [
+        1,
+        3,
+        480,
+        640
+      ],
+      "observation.language.tokens": [
+        1,
+        48
+      ],
+      "observation.language.attention_mask": [
+        1,
+        48
+      ]
+    },
+    "attention_available": false,
+    "intermediate_capture": "unavailable in Phase 2",
+    "versions": {
+      "lerobot": "0.6.1",
+      "torch": "2.10.0+cu126",
+      "torchvision": "0.25.0+cu126",
+      "transformers": "5.4.0",
+      "huggingface-hub": "1.6.0",
+      "safetensors": "0.7.0",
+      "accelerate": "1.14.0",
+      "numpy": "2.2.6",
+      "Pillow": "11.3.0",
+      "streamlit": "1.50.0",
+      "graphviz": "0.21"
+    },
+    "pipeline_seconds": 1.5985296860017115,
+    "observation_sha256": "aa9321848dbb26aa384f30cb8c32825e55d3128b24c9cd8c9919d4bef1866f2c",
+    "observation_manifest": "<original-workspace>/assets/sample_inputs/so100_observation.json",
+    "python": "3.12.14",
+    "process_peak_rss_kib": 3157788
+  }
+}

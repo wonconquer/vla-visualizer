@@ -1,0 +1,65 @@
+{
+  "scope": "English publication checkout; CPU inference integration, not robot task success",
+  "default_tests": {
+    "passed": 120,
+    "skipped": 9,
+    "note": "Seven opt-in real-model tests and two dataset-cache-dependent tests skipped by default."
+  },
+  "separate_pretrained_model_tests": {
+    "passed": 3,
+    "tests": [
+      "test_real_smolvla.py",
+      "test_real_inspection.py",
+      "test_real_viewer.py"
+    ]
+  },
+  "canonical": {
+    "checkpoint": "Zekai-Chen/smolvla_so100_pickplace_ft_2cam",
+    "revision": "77172eaffe82c0897945607bfe818b5b164eb57e",
+    "dataset": "lerobot/svla_so100_pickplace",
+    "dataset_revision": "87169e502b742f989b96c952bff7af55e248d467",
+    "sample": "episode 0/frame 0/timestamp 0/task_index 0",
+    "seed": 0,
+    "device": "cpu",
+    "action_shape": [
+      1,
+      50,
+      6
+    ],
+    "max_abs_difference": 0.0,
+    "rtol": 0,
+    "atol": 1e-06,
+    "state_normalization_verified": true,
+    "action_postprocessing_verified": true,
+    "strict_loading": {
+      "tensor_count": 500,
+      "missing": [],
+      "unexpected": []
+    },
+    "first_action": [
+      0.2631053924560547,
+      177.20497131347656,
+      164.47064208984375,
+      72.0412826538086,
+      83.05445098876953,
+      0.1405186653137207
+    ]
+  },
+  "replay": {
+    "additional_inference_calls": 0,
+    "additional_hook_registrations": 0,
+    "hook_count_before": 0,
+    "hook_count_after": 0
+  },
+  "publication_asset_comparison": {
+    "unchanged_numeric_leaves": 138047,
+    "images_and_parquet": "Original bytes preserved",
+    "annotation_changes": "English display translations and machine-path redaction only"
+  },
+  "limitations": [
+    "Graphical browser acceptance not verified",
+    "GPU execution not verified",
+    "Simulation integration not verified",
+    "Fresh dependency installation not revalidated"
+  ]
+}
