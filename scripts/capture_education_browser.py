@@ -19,7 +19,7 @@ async def verify(url, output):
             record_video_size={"width": 1440, "height": 1000},
         )
         await page.goto(url)
-        await page.get_by_role("heading", name="SmolVLA, from inputs to actions").wait_for()
+        await page.get_by_role("heading", name="VLA Model Explorer and Visualizer").wait_for()
         await page.frame_locator('iframe[title*="smolvla_pipeline"]').locator("svg").wait_for()
 
         async def shot(name):
