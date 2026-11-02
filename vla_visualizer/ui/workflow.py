@@ -527,7 +527,7 @@ def job_feedback(job, owner):
 
 
 def main():
-    st.set_page_config(page_title="SmolVLA · From inputs to actions", page_icon="◈", layout="wide")
+    st.set_page_config(page_title="VLA Model Explorer and Visualizer", page_icon="◈", layout="wide")
     st.markdown(
         """<style>.block-container{max-width:1500px;padding-top:1.6rem}
     [data-testid="stMetric"]{background:#f5f7fc;padding:12px;border-radius:10px}
@@ -535,7 +535,8 @@ def main():
         unsafe_allow_html=True,
     )
     st.caption("ECE525 · Observation → representation → context → action")
-    st.title("SmolVLA, from inputs to actions")
+    st.title("VLA Model Explorer and Visualizer")
+    st.caption("Interactive Inspection and Inference Replay with SmolVLA")
     st.write(
         "Follow how images, instructions, and robot state become internal representations and actions."
     )

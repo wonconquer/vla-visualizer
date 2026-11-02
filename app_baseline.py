@@ -22,7 +22,7 @@ def get_backend() -> InferenceRunner:
 
 
 def main() -> None:
-    st.set_page_config(page_title="VLA Model Explorer", layout="wide")
+    st.set_page_config(page_title="VLA Model Explorer and Visualizer", layout="wide")
     st.title("VLA Model Explorer and Visualizer")
     st.caption("ECE525 · Real pretrained inference and completed-capture inspection / replay.")
     backend = get_backend()

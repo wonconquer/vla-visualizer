@@ -1,4 +1,6 @@
-# SmolVLA Model Explorer
+# VLA Model Explorer and Visualizer
+
+Interactive Inspection and Inference Replay with SmolVLA
 
 A local Streamlit application for inspecting how camera images, an instruction,
 and robot state become an action chunk in SmolVLA. This repository contains the
@@ -14,8 +16,8 @@ Replay reads a completed capture; navigation and playback do not run inference.
 Use Linux x86_64 and Python 3.12. The pinned PyTorch wheel can run on CPU.
 
 ```bash
-git clone https://github.com/wonconquer/ECE525-SmolVLA-Visualizer.git
-cd ECE525-SmolVLA-Visualizer
+git clone https://github.com/wonconquer/vla-visualizer.git
+cd vla-visualizer
 python3.12 -m venv .venv
 source .venv/bin/activate
 python -m pip install --no-cache-dir pip==26.2.1 setuptools==81.0.0 wheel==0.46.3 packaging==25.0
